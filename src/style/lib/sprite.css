@@ -1,0 +1,108 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-custom {
+  background-image: url(../img/common/sprite.png);
+  background-position: -134px -44px;
+  width: 44px;
+  height: 44px;
+}
+.icon-dev {
+  background-image: url(../img/common/sprite.png);
+  background-position: -182px -36px;
+  width: 44px;
+  height: 40px;
+}
+.icon-icon-cart {
+  background-image: url(../img/common/sprite.png);
+  background-position: -206px -102px;
+  width: 18px;
+  height: 24px;
+}
+.icon-icon-play {
+  background-image: url(../img/common/sprite.png);
+  background-position: 0px 0px;
+  width: 70px;
+  height: 70px;
+}
+.icon-icon-search {
+  background-image: url(../img/common/sprite.png);
+  background-position: -182px -102px;
+  width: 24px;
+  height: 24px;
+}
+.icon-logo {
+  background-image: url(../img/common/sprite.png);
+  background-position: -70px 0px;
+  width: 64px;
+  height: 56px;
+}
+.icon-marketing {
+  background-image: url(../img/common/sprite.png);
+  background-position: -182px 0px;
+  width: 52px;
+  height: 36px;
+}
+.icon-our_proj_link {
+  background-image: url(../img/common/sprite.png);
+  background-position: -182px -76px;
+  width: 26px;
+  height: 26px;
+}
+.icon-our_proj_lupa {
+  background-image: url(../img/common/sprite.png);
+  background-position: -208px -76px;
+  width: 26px;
+  height: 25px;
+}
+.icon-result1 {
+  background-image: url(../img/common/sprite.png);
+  background-position: -88px -119px;
+  width: 44px;
+  height: 44px;
+}
+.icon-result2 {
+  background-image: url(../img/common/sprite.png);
+  background-position: -134px 0px;
+  width: 48px;
+  height: 44px;
+}
+.icon-result3 {
+  background-image: url(../img/common/sprite.png);
+  background-position: 0px -119px;
+  width: 44px;
+  height: 44px;
+}
+.icon-result4 {
+  background-image: url(../img/common/sprite.png);
+  background-position: -44px -119px;
+  width: 44px;
+  height: 44px;
+}
+.icon-result5 {
+  background-image: url(../img/common/sprite.png);
+  background-position: -49px -70px;
+  width: 54px;
+  height: 44px;
+}
+.icon-webapp {
+  background-image: url(../img/common/sprite.png);
+  background-position: 0px -70px;
+  width: 49px;
+  height: 49px;
+}

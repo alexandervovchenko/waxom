@@ -1,0 +1,152 @@
+.posts {
+  padding: 70px 0 80px;
+}
+
+.slider_posts {
+  .swiper-slide {
+    border: 1px solid #f7f7f7;
+    &:hover {
+      .post-text-wrap {
+        background-color: #352e2c;
+        h3 {
+          color:#c6b199;
+        }
+        p {
+          color: #fff;
+        }
+      }
+      .post-img-wrap img {
+        filter: brightness(45%);
+        transition: all 0.4s;
+      }
+      .post-data__day {
+        background-color: #c6b199;
+      }
+      .post-data__month {
+        background-color: #a38c72;
+      }
+    }
+  }
+  .swiper-wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+.posts-button-prev,
+.posts-button-next {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #d3d3d3;
+  margin: 0 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.posts-button-prev {
+  &::before {
+    content: "\276E";
+    font-size: 16px;
+    color: #d3d3d3;
+  }
+  &:hover {
+    border: 2px solid #c6b199;
+    &::before {
+      color: #c6b199;
+    }
+  }
+}
+
+.posts-button-next {
+  &::before {
+    content: "\276F";
+    font-size: 16px;
+    color: #d3d3d3;
+  }
+  &:hover {
+    border: 2px solid #c6b199;
+    &::before {
+      color: #c6b199;
+    }
+  }
+}
+
+.slide_nav {
+  display: flex;
+  justify-content: center;
+}
+
+.post-img-wrap {
+  position: relative;
+  text-align: center;
+}
+
+.post-data {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  &__day {
+    background-color: #353535;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding: 2px 12px;
+  }
+  &__month {
+    background-color: #242424;
+    font-family: $roboto;
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 12px;
+  }
+}
+
+.post-text-wrap {
+  transition: all 0.3s;
+  padding: 28px;
+  h3 {
+    font-family: $raleway;
+    font-weight: 500;
+    color: #545454;
+    margin-bottom: 14px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #8b8b8b;
+    margin-bottom: 14px;
+  }
+  a {
+    font-weight: 300;
+    font-size: 14px;
+    color: #c6b199;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    &:after {
+      position: absolute;
+      content: '';
+      border: 4px solid transparent;
+      border-left: 4px solid #c6b199;
+      right: -15px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .posts {
+    padding: 40px 0 50px;
+  }
+  .slider_posts {
+    img {
+      width: 100%;
+    }
+  }
+}

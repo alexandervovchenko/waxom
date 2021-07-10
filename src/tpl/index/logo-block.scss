@@ -1,0 +1,37 @@
+.logo-block {
+  background-image: url(../img/index/logo_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 140px 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo-block {
+    .container {
+      padding: 80px 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo-block {
+    .container {
+      padding: 52px 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-block {
+    .container {
+    padding: 40px 15px;
+    grid-template-columns: 1fr 1fr;
+    }
+  }
+}

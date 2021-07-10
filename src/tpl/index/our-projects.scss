@@ -1,0 +1,134 @@
+.projects {
+  padding: 80px 0;
+}
+
+.tab.is-active {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  &__item {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #8b8b8b;
+    border: 1px solid #eaeaea;
+    padding: 6px 21px;
+    border-radius: 3px;
+    cursor: pointer;
+    &.is-active,
+    &:hover {
+      color: #fff;
+      background-color: #988574;
+      border: 1px solid #988574;
+    }
+  }
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}
+
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tab {
+  display: none;
+  &__block {
+    margin-bottom: 30px;
+    background-color: #faf9f7;
+    padding-bottom: 30px;
+    transition: all 0.3s;
+    max-width: 370px;
+    &:hover {
+      // transition: all .4s;
+      background-color: #352e2c;
+      .tab__title {
+        color: #fff;
+      }
+      .tab__text {
+        color: #c6b199;
+      }
+      .tab__img-link {
+        display: flex;
+        justify-content: space-between;
+      }
+      .tab__img-block {
+        &:after {
+          border-bottom: 15px solid #352e2c;
+        }
+      }
+      .tab__img-block img {
+        filter: brightness(45%);
+      }
+    }
+  }
+  &__text-block {
+    position: relative;
+  }
+  &__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 29px;
+      bottom: 0;
+      margin: -10px 0 0 -11px;
+      z-index: 3;
+      border: 20px solid transparent;
+      border-bottom: 12px solid #faf9f7;
+    }
+  }
+  &__img-link {
+    position: absolute;
+    display: none;
+    width: 80px;
+  }
+  &__title {
+    font-family: $raleway;
+    font-weight: 500;
+    color: #c6b199;
+    padding-left: 28px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 28px;
+    color: #d0d0d0;
+  }
+}
+
+.wp__button-center {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 900px) {
+  .projects {
+    padding: 65px 0;
+  }
+  .tab.is-active {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 40px 0;
+  }
+  .tab.is-active {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

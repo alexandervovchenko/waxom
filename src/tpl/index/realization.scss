@@ -1,0 +1,65 @@
+.realization {
+  background-color: #faf9f7;
+  padding-top: 75px;
+  .container {
+    position: relative;
+  }
+}
+
+.realiz-img-center {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.realiz-img-left {
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+}
+
+.realiz-img-right {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+}
+
+.section_title {
+  font-family: $raleway;
+  font-weight: 600;
+  font-size: 30px;
+  color: #545454;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section_txt {
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+@media (max-width: 1300px) {
+  .realiz-img-left {
+    left: 0;
+  }
+  
+  .realiz-img-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .realization {
+    padding-top: 40px;
+  }
+  .realiz-img-left,
+  .realiz-img-right {
+    display: none;
+  }
+}

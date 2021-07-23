@@ -110,7 +110,9 @@ overlayVideo.addEventListener('click', function() {
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 (function init100vh(){
+
   function setHeight() {
+    console.log(vh);
     var vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
